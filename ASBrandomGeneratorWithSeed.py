@@ -1,8 +1,9 @@
+# ASB #
 import numpy as np
 import math
 
-def ASBrandomGeneratorWithSeed (seed,limit):
-	seed = seed + 458							# operations for a random generated number between 0 and "limit" 
+def ASBrandomGeneratorWithSeed (seed,limit):	# operations for a random generated number between 0 and "limit" 
+	seed = seed + 458 #ASB							
 	x1 = (seed**2)+(2*seed)+1997							
 	x2 = x1 + int(math.log(seed, 2))
 	x3 = x2 + int(math.log(x2, 5))
